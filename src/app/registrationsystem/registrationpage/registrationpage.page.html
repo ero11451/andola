@@ -1,0 +1,57 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref=""></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content class="ion-padding">
+  <div>
+   <img src="" alt="" srcset="">
+  </div>
+  <form >
+    <ion-list>
+       <ion-item class="animated faster fadeInLeft">
+         <ion-label position="floating">User name</ion-label>
+         <ion-input clearInput></ion-input>
+      </ion-item>
+    </ion-list>
+       <ion-item class="animated fast fadeInLeft">
+         <ion-label position="floating">Password</ion-label>
+         <ion-input class="animated  dropUp slow"></ion-input>
+      </ion-item>
+      <ion-item class="mt-3 animated fast fadeInRight">
+         <a slot="end" [routerLink]="['/forgot']"  routerDirection="forward"
+           routerLinkActive="router-link-active" >Forgot Password </a>
+      </ion-item>
+ 
+    <button
+      routerLinkActive="router-link-active"
+      [routerLink]="['home']"  
+      class="btn-block text-bold btn btn-primary mt-3 animated p-2 fast fadeInDown" 
+      expand="full">Login</button>
+  </form>
+  <br>
+  <div class="mt-4 mb-3">
+    <p class="text-center text-muted">Or login with.</p>
+  </div>
+  <br>
+  <ion-item lines="none" >
+      <ion-fab-button class="mb-2 mr-3 ml-4">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="danger" class="mb-2 mr-3 animated slideInUp faster">
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button class="mr-3 mb-2 animated slideInUp fast">
+        <ion-icon name="logo-twitter"></ion-icon> 
+      </ion-fab-button>
+      <ion-fab-button class="animated mb-2 slideInUp">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </ion-fab-button>
+  </ion-item>
+ 
+  <div class="mt-3 animated slow fadeInDown">
+      <p class="text-center"> Don't have an account?
+         <a  [routerLink]="['/register']" 
+         routerLinkActive="router-link-active">Register Now</a> </p>
+    </div>
+</ion-content>

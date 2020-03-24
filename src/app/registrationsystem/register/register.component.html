@@ -1,0 +1,54 @@
+<ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+       class="animated faster slideInLeft" 
+      defaultHref=""></ion-back-button>
+    </ion-buttons>
+</ion-toolbar>
+<ion-content class="ion-padding">
+    <h5 class="animated slow fadeInUp" >
+      Register on SkillConnect as  a {{usertype }}
+    </h5>
+    <form action="">
+  
+     <ion-item  *ngIf="usertype == 'employer'">
+        <ion-label position="floating">Company Name</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+   
+      <ion-item *ngIf="usertype !== 'employer'">
+         <ion-label position="floating">Full Name</ion-label>
+         <ion-input></ion-input>
+      </ion-item>
+      <ion-item class="animated faster slideInLeft">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input></ion-input>
+     </ion-item>
+     <ion-item class="animated faster slideInLeft">
+      <ion-label position="floating">Mobile Number</ion-label>
+      <ion-input></ion-input>
+   </ion-item>
+   <ion-item class="animated fast slideInLeft">
+       <ion-label position="floating">Full Name</ion-label>
+       <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="animated fast slideInLeft">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input></ion-input>
+   </ion-item>
+   <ion-item class="animated  slideInLeft">
+    <ion-label position="floating">Confirm Password</ion-label>
+    <ion-input></ion-input>
+   </ion-item>
+    <ion-button 
+     [routerLink]="['/home']"
+     class="mt-3 animated slow fadeInDown"
+      expand="full">Register</ion-button>
+    </form>
+    <p class="footer mt-3">
+      By registering you agree to <a  [routerLink]="['/login']" 
+      routerLinkActive="router-link-active">Terms & Condition </a> 
+      and <a  [routerLink]="['/login']" 
+      routerLinkActive="router-link-active"> Privacy Policy </a> of the SkillConnect
+    </p>
+</ion-content>
