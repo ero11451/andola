@@ -1,0 +1,28 @@
+.text-bold{
+   font-weight: bolder;
+}
+.cours-box{
+   height: 200px;
+   width: 200px;
+   background-color:rgb(16, 16, 70);
+   color: white;
+   padding: 5% 0px 5% 5%;
+   .bg-title{
+     font-weight:bolder;
+     font-size: 40px;
+     opacity: 0.5;
+     margin: -30px -10px 0px 0px;
+   }
+   .title{
+     font-weight: bolder; 
+     margin-top: -10px
+   }
+   .sub-title{
+     font-size: small;
+     opacity: 0.8;
+   }
+ p{
+   margin: 0px;
+   padding: 0px;
+ }
+  }

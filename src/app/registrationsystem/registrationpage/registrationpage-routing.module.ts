@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { RegistrationpagePage } from './registrationpage.page';
-import { RegisterComponent } from '../register/register.component';
-import { ForgotpasswordComponent } from '../forgotpassword/forgotpassword.component';
-import { GetcodeComponent } from '../getcode/getcode.component';
+import { LoginPage } from '../login/login.page';
 
 const routes: Routes = [
   {
@@ -12,17 +10,9 @@ const routes: Routes = [
     component: RegistrationpagePage,
   },
   {
-    path:"register/:usertype",
-    component:RegisterComponent
+    path: 'login',
+    component: LoginPage,
   },
-  {
-    path:"forgot",
-    component:ForgotpasswordComponent
-  },
-  {
-    path:"getcode",
-    component:GetcodeComponent
-  }
 ];
 
 @NgModule({

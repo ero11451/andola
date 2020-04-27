@@ -227,3 +227,42 @@
     --color: white;
   }
 }
+.dark-theme{
+ 
+  --ion-color-primary-tint: #383a3e;
+  --ion-color-primary: #222428;
+  --ion-color-primary-rgb: 34, 34, 34;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #1e2023;
+ion-icon{
+  color:white
+}
+ion-content{
+  --background:black ;
+  --color:white
+ }
+ion-list{
+  --ion-item-background:black;
+  --ion-item-color:white;
+  ion-list-header{
+    --color:#fff
+  }
+}
+ion-button{
+  --color:white;
+}
+ion-card{
+  --color:white;
+  ion-card-title{
+    --color:white
+  }
+}
+ion-tab-bar{
+  --background:black;
+  --color:white
+}
+p{ 
+  color:white
+}
+}

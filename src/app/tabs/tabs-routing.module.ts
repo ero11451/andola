@@ -8,37 +8,42 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: '',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/home/home.module').then(m => m.HomePageModule)
+          }
+        ]
+      },
+      {
+        path: 'coures',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/course/course.module').then(m => m.CoursePageModule)
+          }
+        ]
+      },
+      {
         path: 'home',
         children: [
           {
             path: '',
             loadChildren: () =>
               import('../pages/home/home.module').then(m => m.HomePageModule)
-          },
-          {
-            path: 'service',
-            loadChildren: () =>
-              import('../pages/service/service.module').then(m => m.ServicePageModule)
           }
         ]
       },
       {
-        path: 'profile',
+        path: 'service',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
-          }
-        ]
-      },
-      {
-        path: 'news',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../pages/news/news.module').then(m => m.NewsPageModule)
+              import('../service/service/service.module').then(m => m.ServicePageModule)
           }
         ]
       },
@@ -52,39 +57,19 @@ const routes: Routes = [
           }
         ]
       },
-         {
-        path: 'service',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../pages/service/service.module').then(m => m.ServicePageModule)
-          }
-        ]
-      },
       {
-        path: 'profile',
+        path: 'Update',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
+              import('../pages/into/news/news.module').then(m => m.NewsPageModule)
           }
         ]
       },
       {
         path: '',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../pages/home/home.module').then(m => m.HomePageModule)
-          }
-        ]
-      },
-      {
-        path: '',
-        redirectTo: 'home',
+        redirectTo: '/tabs/tab1',
         pathMatch: 'full'
       }
     ]

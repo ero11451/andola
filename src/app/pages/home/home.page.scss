@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-small{
+    font-weight: small;
+    font-size: small;
+}
+.slide{
+     display: grid;
+     background-color:#DBDAF5;
+     height:fit-content;
+     grid-template-columns: 70% 30%;
+     border-radius: 10px;
+     margin: 10px 3% 0;
+     div{
+         padding: 5%;
+     }
+    title{
+        font-weight: bold;
+    }
+    .subtitle{
+        font-weight: small;
+        font-size: 10px;
+    }
+   img{
+       width: 160px;
+       margin-top: -20px;
+   }
+}
+
+.service{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    grid-template-columns: 50% 50%;
+    margin: 5px;
+    .service-box{
+        margin: 10px;
+        transition:  2s linear 1s;
+        transition:  background-color 1s linear 1s;
+        display: block;
+        height: 150px;
+        width: 100p;
+        padding: 7%;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+        .title{
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .subtitle{
+            font-size: small;
+        }
+        img{
+            height: 30%;
+            margin-top: 5px;
+        }
+    }
+    .service-box:hover{
+        background-color: #1B4AE4;
+        color: white;
+
+    }
+}
+
+
+
+.scroll-feature {
+    overflow: auto;
+    white-space: nowrap;
+    .scroll-div {
+        display: inline-block;
+        border: none;
+    }
+}
+
+.update-feed{
+   img{
+       border-radius: 10px;
+       width: 100px;
+       height: 100px;
+   }
+}
+
+.course-card{
+    border-radius: 10px;
+    height: 220px;
+    width: 200px;
+    padding: 10% 0px 0px 10%;
+    color: white;
+    .title{
+     font-weight: bolder;
+     font-size: 20px;
+    }
+    .subtitle{
+      font-size: small;
+      margin-top: 40%;
+      width: 100px;
+    }
+    .price{
+      font-weight: bold;
+    }
+}

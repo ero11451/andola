@@ -7,22 +7,19 @@ import { IonicModule } from '@ionic/angular';
 import { RegistrationpagePageRoutingModule } from './registrationpage-routing.module';
 
 import { RegistrationpagePage } from './registrationpage.page';
-import { RegisterComponent } from '../register/register.component';
-import { ForgotpasswordComponent } from '../forgotpassword/forgotpassword.component';
-import { GetcodeComponent } from '../getcode/getcode.component';
+import { LoginPageModule } from '../login/login.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistrationpagePageRoutingModule
+    RegistrationpagePageRoutingModule,
+    LoginPageModule
   ],
   declarations: [
     RegistrationpagePage,
-    RegisterComponent,
-    ForgotpasswordComponent,
-    GetcodeComponent
+
   ]
 })
 export class RegistrationpagePageModule {}

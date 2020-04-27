@@ -1,25 +1,14 @@
-<div class="dropdown">
-  <div class="dropdown-toggle" data-toggle="dropdown" >
-     profile <span class="caret"></span>
+<ion-fab vertical="top" horizontal="end" size="small" slot="fixed">
+    <ion-fab-button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="../../assets//image//menu.svg" alt="" srcset="">
+    </ion-fab-button>
+  </ion-fab>
+
+  <div class="dropdown">
+  
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
   </div>
-  <ion-list class="dropdown-menu" lines=none>
-    <ion-item>
-      <ion-icon slot="start" name="add"></ion-icon>
-      <p>Setting</p> 
-    </ion-item>
-    <ion-item>
-      <ion-icon slot="start" name="add"></ion-icon>
-      <p>Darktheme</p> 
-      <ion-toggle color="primary"  slot="end" (click)="notification()" class="ml-3"></ion-toggle>
-    </ion-item>
-     <ion-item>
-       <ion-icon slot="start" name="add"></ion-icon>
-       <p>profile</p> 
-     </ion-item>
-     <ion-item>
-        <ion-icon slot="start" name="add"></ion-icon>
-        <p>Notification</p> 
-        <ion-toggle color="primary"   (click)="notification()" class="ml-3"></ion-toggle>
-     </ion-item>
-  </ion-list>
-</div>

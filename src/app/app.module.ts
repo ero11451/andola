@@ -9,6 +9,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
+import { MenuComponent } from './menu/menu.component';
+import { SuperTabsModule } from "@ionic-super-tabs/angular";
+
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,6 +21,7 @@ import { IonicStorageModule } from '@ionic/storage';
     BrowserModule, 
     IonicModule.forRoot(),
     AppRoutingModule,   
+    SuperTabsModule.forRoot(),
     IonicStorageModule.forRoot({
       name: '__mydb',
       driverOrder: ['indexeddb', 'sqlite', 'websql']

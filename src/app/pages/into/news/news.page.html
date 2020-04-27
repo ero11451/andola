@@ -1,0 +1,47 @@
+
+<ion-content>
+<ion-button (click)="enabledark()" expand="block" fill="clear" shape="round">
+  enbledark
+</ion-button>
+<ion-button (click)="enablelight()" expand="block" fill="clear" shape="round">
+  enablelight
+</ion-button>
+<ion-list class="body">
+  <ion-item lines="none">
+    <p class="text-bold ">Info</p>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label >
+      <p class="text-bold title"> Hi osasu</p>
+       <small class="w-75 text-small text-muted">this is the best  the  play for story  </small>
+     </ion-label>
+  </ion-item>
+ <ion-item lines="none">
+   
+   <input type="text" class="search-bar form-control" placeholder="search for topic..">
+ </ion-item>
+   <div class="pl-3" lines="none">
+     <ion-label class="text-bold">Category</ion-label>
+   </div>
+
+ <ion-item lines="none">
+       <div class="scroll-feature mt-3 mb-3">
+        <div class="scroll-div "*ngFor="let item of [ 3,1,1,1,1,1];">
+          <button class="catigory mr-2" type="button">Angular</button>
+        </div>
+    </div>
+ </ion-item>
+   <ion-item (click)=" detailpage()" lines="none" class="update-feed">
+      <div >
+          <p class="text-bold"> internet Society Board of Trustees Meeting ...  </p> 
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elitl..</p>    
+      </div>
+         <img slot="end" class="ml-3"src="../../../assets//image//couserbg1.jpg" alt="" srcset="">
+   </ion-item>
+  
+</ion-list>
+
+
+
+
+</ion-content>
