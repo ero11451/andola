@@ -17,7 +17,7 @@ export class NewsPage implements OnInit {
    this.nav.navigate(["infodetials"])
   }
   enabledark(){
-    this.theme.enabledark()
+    this.theme.enableDark()
    }
    enablelight(){
      this.theme.enablelight()

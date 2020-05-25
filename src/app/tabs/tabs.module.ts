@@ -7,14 +7,20 @@ import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
 import { MenuComponent } from '../menu/menu.component';
+import { HomePageModule } from '../pages/home/home.module';
+import { SuperTabsModule } from '@ionic-super-tabs/angular';
+import { HomePage } from '../pages/home/home.page';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
+    HomePageModule,
+    SuperTabsModule
   ],
-  declarations: [TabsPage,MenuComponent]
+  declarations: [TabsPage],
+  // entryComponents:[HomePage]
 })
 export class TabsPageModule {}

@@ -18,9 +18,9 @@ import { SuperTabsModule } from "@ionic-super-tabs/angular";
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule,   
+    AppRoutingModule,
     SuperTabsModule.forRoot(),
     IonicStorageModule.forRoot({
       name: '__mydb',
